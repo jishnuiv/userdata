@@ -1,4 +1,4 @@
-class SingleUser {
+class User {
   String? id;
   String? title;
   String? firstName;
@@ -12,7 +12,7 @@ class SingleUser {
   String? registerDate;
   String? updatedDate;
 
-  SingleUser(
+  User(
       {this.id,
         this.title,
         this.firstName,
@@ -26,7 +26,7 @@ class SingleUser {
         this.registerDate,
         this.updatedDate});
 
-  SingleUser.fromJson(Map<String, dynamic> json) {
+ User.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     title = json['title'];
     firstName = json['firstName'];
